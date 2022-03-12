@@ -1,2 +1,8 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<h2>Title</h2>
+ <p><%= @book.title %></p>
+ 
+<h2>body</h2>
+ <p><%= @book.body %></p>
+ 
+<%= link_to "Edit", edit_book_path(@book.id) %>
+<!--<%= link_to "Destory", destory_path(@book.id), method :delete, "date-confilm"=>"Are you sure?" %>-->
