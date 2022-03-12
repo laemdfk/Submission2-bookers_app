@@ -1,6 +1,8 @@
+# 読み込んで欲しい順に配置する
+#top pageへのルートパスは、root toを用いる
 Rails.application.routes.draw do
-  get 'top' => 'homes#top'
-  get 'index' =>'books#index'
+  root to: 'homes#top'
+  get 'books' =>'books#index'
   post 'books'=>'books#create'
   get 'show/:id'=>'books#show', as: 'book'
   get 'books/:id/edit'=>'books#edit', as: 'edit_list'
