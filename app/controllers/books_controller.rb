@@ -14,6 +14,7 @@ class BooksController < ApplicationController
      if @book.save
       flash[:notice]="Book was successfully created."
       redirect_to books_path(@book_id)
+      
      else
        @books = Book.all
        # @book = Book.new
