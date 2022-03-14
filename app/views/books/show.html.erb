@@ -4,5 +4,7 @@
 <h2>body</h2>
  <p><%= @book.body %></p>
  
+ <%= link_to "back", "/books" %>
+ 
 <%= link_to "Edit", edit_book_path(@book.id) %>
-<!--<%= link_to "Destory", destory_path(@book.id), method :delete, "date-confilm"=>"Are you sure?" %>-->
+<!--<%= link_to "Destory", book_path(@book.id), method: :delete %>-->
