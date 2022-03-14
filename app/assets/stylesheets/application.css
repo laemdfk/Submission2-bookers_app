@@ -35,6 +35,14 @@
     font-weight: bold;
  }
  
+ 
+ p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
  p {
      font-size: 13px;
      margin: 33px;
@@ -55,6 +63,14 @@
     line-height: 18px;
     margin: 33px;
  }
+ 
+.show {
+    display: inline-block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
  
  
 table {
