@@ -1,5 +1,3 @@
-<div class="show">
-
 <strong>Title:</strong>
  <p><%= @book.title %></p>
  
@@ -7,6 +5,6 @@
  <p><%= @book.body %></p>
  
  <%= link_to "back", "/books" %>
- </div>
+  | 
 <%= link_to "Edit", edit_book_path(@book.id) %>
 <!--<%= link_to "Destory", book_path(@book.id), method: :delete %>-->
