@@ -1,10 +1,12 @@
-<h2>Title</h2>
+<div class="show">
+
+<strong>Title:</strong>
  <p><%= @book.title %></p>
  
-<h2>body</h2>
+<strong>body:</strong>
  <p><%= @book.body %></p>
  
  <%= link_to "back", "/books" %>
- 
+ </div>
 <%= link_to "Edit", edit_book_path(@book.id) %>
 <!--<%= link_to "Destory", book_path(@book.id), method: :delete %>-->

@@ -38,7 +38,7 @@ class BooksController < ApplicationController
      else
     # @books = Book.all
     # @book = Book.new
-     render 'index'
+     render 'edit'
      end
   end
   
