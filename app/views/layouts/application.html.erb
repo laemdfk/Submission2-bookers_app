@@ -9,6 +9,14 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  
+  <!--css同様、こちらにメッセージの記述をすると、全体に反映される？-->
+  
+  <% if flash[:notice] %>
+   <div class="flash">
+     <%= flash[:notice] %>
+   </div>
+  <% end %>
 
   <body>
     <%= yield %>

@@ -1,11 +1,19 @@
-<strong>Title:</strong>
- <p><%= @book.title %></p>
- 
-<strong>body:</strong>
- <p><%= @book.body %></p>
+<p id="notice"></p>
 
- <%= link_to "back", "/books" %>
-  | 
+<p>
+ <strong>Title:</strong>
+ <%= @book.title %>
+</p>
+ 
+<p>
+ <strong>body:</strong>
+ <%= @book.body %>
+</p>
+
 <%= link_to "Edit", edit_book_path(@book.id) %>
+  |
+ <%= link_to "back", "/books" %>
 
 <!--<%= link_to "Destory", book_path(@book.id), method: :delete %>-->
+
+<!-- editのpathは以下なので...?  edit_book GET   /books/:id/edit(.:format) books#edit-->

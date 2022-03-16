@@ -47,7 +47,9 @@
      font-size: 13px;
      margin: 33px;
      color: #333333;
+     display: block;
  }
+ 
  
  .notification {
      color: #008000;
@@ -64,14 +66,13 @@
     margin: 33px;
  }
  
-.show {
+show {
     display: inline-block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
- 
  
 table {
     display: table;
@@ -80,6 +81,7 @@ table {
     text-indent: initial;
     border-spacing: 2px;
     border-color: grey;
+    padding-bottom: 5px;
 }
 
 td {
@@ -101,19 +103,17 @@ tr {
     border-color: inherit;
 }
 
-.errors_explanation {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px;
-    margin-bottom: 0;
-    background-color: #c00;
+.error_box {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f3f3f3;
 }
 
-
-.errors_explanation h2 {
-    ext-align: left;
+ h3 {
+    text-align: left;
     font-weight: bold;
     padding: 5px 5px 5px 15px;
     font-size: 12px;
@@ -123,9 +123,33 @@ tr {
     color: #fff;
 }
 
+
+
 ul {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 13px;
     line-height: 18px;
     margin: 33px;
+}
+
+li {
+    color: black;
+}
+
+label {
+    display: inline-block; 
+    padding: 2px;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.flash {
+    color: green;
+}
+
+.submit {
+    padding-top: 6px;
+    padding-bottom: 10px;
 }
